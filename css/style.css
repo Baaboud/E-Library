@@ -17,6 +17,15 @@ a {
     color: #000;
 }
 
+.center {
+    margin: 0 auto;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+}
+
 .row {
     display: flex;
 }
@@ -138,13 +147,13 @@ header {
 }
 
 .top-links {
+    position: relative;
     justify-content: center;
     flex-wrap: wrap;
 }
 
 #news {
     padding: 10px;
-    position: relative;
 }
 
 #news h3{
@@ -183,11 +192,11 @@ header {
 }
 
 .footer-lists {
-    width: 75%;
+    flex-grow: 1;
 }
 
 .footer-lists>div {
-    width: 25%;
+    flex-grow: 1;
     justify-content: center;
     padding: 10px;
 }
@@ -201,7 +210,7 @@ header {
     position: absolute;
     bottom: 0;
     right: 0;
-    width: 100%;
+    width: 20%;
     padding: 20px;
 }
 
