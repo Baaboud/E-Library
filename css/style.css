@@ -94,6 +94,7 @@ header {
     background-color: #EFF2F7;
     border: none;
     border-radius: 30px;
+    outline: none;
 }
 
 #search:focus {
@@ -132,6 +133,22 @@ header {
 
 .main {
     height: 400px;
+}
+
+.slider ul {
+    margin: 0 30px;
+    overflow-x: scroll;
+    flex-wrap: nowrap;
+    width: 100%;
+    justify-content: unset;
+}
+
+.slider ul li {
+    width: 20%;
+}
+
+h2 {
+    margin: 30px 0;
 }
 
 
@@ -178,7 +195,7 @@ header {
 }
 
 #news button {
-    width: 100px;
+    width: 80px;
     background-color: #fff;
     padding: 10px 20px;
     font-size: 18px;
@@ -204,6 +221,12 @@ header {
 .footer-lists li {
     font-size: 16px;
     padding-top: 10px;
+}
+
+
+
+.footer-lists b {
+    font-size: 22px;
 }
 
 .contact {
@@ -243,8 +266,112 @@ header {
 
 .end-text div a {
     color: gray;
+    font-size: 12px;
 }
 
 .end-text p {
     color: gray;
+    font-size: 12px;
+}
+
+@media screen and (max-width: 1080px) {
+    .search-tags {
+        display: none;
+    }
+
+    .top-bar i {
+        display: none;
+    }
+
+    .top-links {
+        display: block;
+    }
+
+    #news {
+        display: flex;
+        justify-content: space-around;
+        justify-items: center;
+    }
+
+    #news h3 {
+        border: none;
+        display: inline-block;
+        margin: auto 0;
+        flex-grow: 1;
+    }
+
+    #news form {
+        flex-grow: 3;
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: #333;
+    }
+
+    #news form input {
+        width: 70%;
+    }
+
+    .footer-lists {
+        flex-wrap: wrap;
+    }
+
+    .footer-lists li {
+        display: none;
+    }
+
+    .footer-lists > div {
+        width: 50%;
+    }
+
+    .contact {
+        position: static;
+    }
+}
+
+@media screen and (max-width: 860px) {
+
+    .top-bar {
+        display: none;
+    }
+
+    .header-main {
+        justify-content: center;
+        margin: 10px 10px;
+    }
+
+    #search-form {
+        margin: 0 5px;
+    }
+
+    #logo {
+        width: 100px;
+    }
+
+    #news h3 {
+        display: none;
+    }
+
+    .footer-lists > div {
+        width: 100%;
+    }
+
+    .contact {
+        width: 100%;
+        display: flex;;
+        justify-content: space-between;
+    }
+
+    .footer-bottom ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+    }
+
+    .footer-bottom div {
+        margin-top: 10px;
+        text-align: center;
+    }
 }
