@@ -1,0 +1,30 @@
+.offer {
+    animation-name: move;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+@keyframes move {
+
+    0% {
+        background-image: url("../images/logo.svg");
+    }
+
+    25% {
+        background-image: url("../images/cover2.jpg");
+    }
+
+    50% {
+        background-image: url("../images/sky.webp");
+    }
+
+    75% {
+        background-image: url("../images/cover1.webp");
+    }
+
+    100% {
+        background-image: url("../images/cover2.jpg");
+    }
+}
