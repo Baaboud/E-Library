@@ -60,7 +60,8 @@ header {
 .header-main {
     position: sticky;
     position: -webkit-sticky;
-    top: 0; /* required */
+    top: 0;
+    /* required */
     justify-content: space-around;
     margin: 20px 40px;
 }
@@ -158,14 +159,14 @@ h2 {
 }
 
 .slider ul {
-    margin: 0 30px;
     overflow-x: scroll;
     flex-wrap: nowrap;
     width: 100%;
-    justify-content: unset;
+    justify-content: unset !important;
 }
 
 .slider ul li {
+    margin: 10px 10px;
 }
 
 
@@ -190,7 +191,7 @@ h2 {
     padding: 10px;
 }
 
-#news h3{
+#news h3 {
     text-align: right;
 }
 
