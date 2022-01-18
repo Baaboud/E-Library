@@ -1,30 +1,40 @@
 .offer {
+    margin-top: 20px;
     animation-name: move;
-    animation-duration: 8s;
+    animation-duration: 6s;
     animation-iteration-count: infinite;
-    background-size: contain;
     background-repeat: no-repeat;
 }
 
 @keyframes move {
 
     0% {
-        background-image: url("../images/logo.svg");
+        content: url("../images/offer1.webp");
+        opacity: 10;
     }
 
-    25% {
-        background-image: url("../images/cover2.jpg");
+    20% {
+        content: url("../images/offer2.webp");
+        opacity: 10;
+    }
+
+    40% {
+        content: url("../images/offer3.jpg");
+        opacity: 1;
     }
 
     50% {
-        background-image: url("../images/sky.webp");
+        content: url("../images/offer4.jpg");
+        opacity: 1;
     }
 
-    75% {
-        background-image: url("../images/cover1.webp");
+    60% {
+        content: url("../images/offer5.jpg");
+        opacity: 1;
     }
 
-    100% {
-        background-image: url("../images/cover2.jpg");
+    80% {
+        content: url("../images/offer6.jpg");
+        opacity: 1;
     }
 }
