@@ -1,0 +1,17 @@
+.box-slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-slider > img {
+    width: 100%;
+}
+
+.arrow {
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    background-color: #eee;
+}

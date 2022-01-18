@@ -10,31 +10,25 @@
 
     0% {
         content: url("../images/offer1.webp");
-        opacity: 10;
     }
 
     20% {
         content: url("../images/offer2.webp");
-        opacity: 10;
     }
 
     40% {
         content: url("../images/offer3.jpg");
-        opacity: 1;
     }
 
     50% {
         content: url("../images/offer4.jpg");
-        opacity: 1;
     }
 
     60% {
         content: url("../images/offer5.jpg");
-        opacity: 1;
     }
 
     80% {
         content: url("../images/offer6.jpg");
-        opacity: 1;
     }
 }

@@ -53,6 +53,22 @@
 }
 
 @media screen and (max-width: 860px) {
+    .register {
+        flex-direction: column;
+        overflow-y: scroll;
+    }
+
+    .register > div {
+        width: 100% !important;
+    }
+
+    .sign-up {
+        width: 100%;
+    }
+
+    .log-in {
+        width: 100%;
+    }
 
     .top-bar {
         display: none;
