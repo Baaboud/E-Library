@@ -1,0 +1,144 @@
+.cart-body {
+    width: 64%;
+}
+
+.cart-price {
+    width: 32%;
+    margin-top: 20px;
+}
+
+.products {
+    margin-top: 20px;
+}
+
+.product {
+    margin-top: 20px;
+    padding: 20px;
+    box-shadow: 0px 0px 2px #aaa;
+}
+
+.product img {
+    width: 40px;
+    margin-bottom: auto;
+}
+
+.product > hr {
+    margin: 15px 0;
+    border-color: white;
+}
+
+.title {
+    margin-right: 20px;
+}
+
+.title h3 {
+    font-size: 22px;
+}
+
+.title > i {
+    display: inline-block;
+    color: gray;
+    font-size: 13px;
+    margin: 10px 0px;
+}
+
+.note {
+    background-color: #FFF9EB;
+    padding: 10px 15px 10px 50px;
+    border-right: 5px solid #FFD401;
+}
+
+.note a {
+    color: #4456cc;
+}
+
+.note span {
+    color: gray;
+}
+
+.counter-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 60px;
+}
+
+.counter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #eee;
+}
+
+.counter span {
+    padding: 10px;
+    margin: auto auto;
+    font-size: 20px;
+    color: gray;
+}
+
+.counter-btns {
+    display: flex;
+    flex-direction: column;
+}
+
+.counter-btns button {
+    width: 20px;
+    font-size: 20px;
+    border-color: #eee;
+    background-color: #eee;
+    color: gray;
+    border: 1px solid #dcd;
+}
+
+.red-text {
+    color: #CF070E;
+    font-size: 24px;
+}
+
+.bold-text {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.free {
+    font-size: 24px !important;
+    color: #3B3 !important;
+}
+
+.counter-price b {
+    font-size: 30px;
+}
+
+.cart-info {
+    padding: 20px;
+    box-shadow: 0px 0px 2px #aaa;
+}
+
+.top-cart > .row {
+    margin: 6px 0px;
+}
+
+.bottom-cart {
+    margin-top: 120px;
+}
+
+.bottom-cart p {
+    color: gray;
+    font-size: 14px;
+}
+
+.gray {
+    color: gray;
+}
+
+#cart-btn {
+    margin-top: 10px;
+    width: 100%;
+    background-color: #CF070E;
+    color: #eee;
+    font-size: 24px;
+    padding: 8px 0px;
+    border-radius: 8px;
+    border: none;
+}
