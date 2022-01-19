@@ -34,6 +34,11 @@ hr {
     margin-bottom: 40px;
 }
 
+.hr {
+    height: 5px;
+    background-color: #333;
+}
+
 .register > div {
     width: 40%;
     display: flex;

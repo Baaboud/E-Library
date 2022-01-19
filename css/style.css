@@ -27,6 +27,14 @@ a {
     max-width: 1200px;
 }
 
+.show {
+    visibility: visible;
+}
+
+.hide {
+    visibility: hidden;
+}
+
 .row {
     display: flex;
 }
