@@ -1,3 +1,18 @@
+// show & hide steps
+
+const openSteps = document.getElementById("cart-btn");
+const stepsContainer = document.getElementById("front");
+const hideSteps = document.getElementById("hideSteps");
+
+openSteps.addEventListener("click", function () {
+    stepsContainer.style.display = "block";
+});
+
+hideSteps.addEventListener("click", (e) => {
+    e.preventDefault();
+    stepsContainer.style.display = 'none';
+  });
+
 // Steper contents
 const cards = document.querySelectorAll(".steps");
 

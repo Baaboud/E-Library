@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/media.css">
     <link rel="stylesheet" href="css/register.css">
     <link rel="stylesheet" href="css/checkout.css">
+    <link rel="stylesheet" href="css/steps.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <title>E-library</title>
@@ -216,9 +217,80 @@
     
                 <div class="bottom-cart">
                     <p>بالضغط على "انهاء التسوق" فأنت توافق على الشروط والاحكام و سياسة الخصوصية</p>
-                    <a href="steps.html"><button id="cart-btn">انهاء التسوق</button></a>
+                    <button id="cart-btn">انهاء التسوق</button>
                 </div>
             </div>
+        </div>
+    </div>
+
+
+    <div id="front">
+        <button id="hideSteps" class="close">X</button>
+        <div class="container row">
+            <div id="progress" class="progress">
+                <div class="circle active">1</div>
+                <div class="circle">2</div>
+                <div class="circle">3</div>
+                <div class="circle">4</div>
+                <div id="line"></div>
+            </div>
+        </div>
+    
+        <div class="container mt steps-container">
+            <form action="" id="step1" class="steps row">
+                <input type="text" placeholder="اسم المستخدم">
+                <input type="email" name="" id="" placeholder="البريد الالكتروني">
+                <input type="tel" placeholder="رقم الهاتف">
+                <input type="text" placeholder="العنوان">
+            </form>
+    
+            <form action="" id="step2" class="steps row mt">
+                <div class="row gap">
+                    <input type="text" placeholder="نوع بطاقة الدفع">
+                    <select name="" id="">
+                        <option value="">VISA CARD</option>
+                        <option value="">MASTER CARD</option>
+                        <option value="">AMERICAN EXPRESS CARD</option>
+                        <option value="">PAYPAL CARD</option>
+                    </select>
+                </div>
+                <input type="text" placeholder="رقم بطاقة الدفع">
+                <div class="row date">
+                    <p>تاريخ الاصدار</p>
+                    <input type="date" name="" id="">
+                </div>
+            </form>
+    
+            <div id="step3" class="steps confirm center mt">
+                <div class="top-cart">
+                    <div class="row space-around">
+                        <span class="bold-text">المجموع</span>
+                        <p><b class="bold-text">68.97</b> ر.س </p>
+                    </div>
+                    <div class="row space-around">
+                        <span class="bold-text">تكاليف الشحن</span>
+                        <b class="free">مجاني</b>
+                    </div>
+                    <div class="row space-around">
+                        <p><b class="red-text">المجموع الكلي </b><span class="gray"> شامل الضريبة </span></p>
+                        <span><b class="red-text">68.97</b> ر.س </span>
+                    </div>
+                </div>
+    
+                <div class="bottom-cart">
+                    <p>بالضغط على "تاكيد الشراء" فسيتم اتمام عملية الشراء وفقا لبيانات المستخدم وبيانات الدفع</p>
+                    <button id="cart-btn">تاكيد الشراء</button>
+                </div>
+            </div>
+    
+            <div id="step4" class="steps">
+                <h3>Done</h3>
+            </div>
+        </div>
+
+        <div class="container mt row">
+            <button class="btn" id="prev-btn">السابق</button>
+            <button class="btn" id="next-btn">التالي</button>
         </div>
     </div>
 
@@ -312,6 +384,7 @@
         </div>
     </footer>
     <script src="js/app.js"></script>
+    <script src="js/steps.js"></script>
 </body>
 
 </html>
