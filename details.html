@@ -24,7 +24,7 @@
                 <h2>تسجيل الدخول</h2>
                 <hr class="hr">
                 <div class="log-in">
-                    
+
                 </div>
                 <form action="">
                     <input type="text" name="" id="" placeholder="البريد الالكتروني او رقم الجوال">
@@ -101,7 +101,7 @@
             </div>
         </div>
     </header>
-    
+
     <div class="container center offers-container">
         <h2 id="timer">اخر العروض</h2>
         <div class="timer-container">
@@ -116,32 +116,143 @@
     </div>
 
     <div class="container center">
-        <div class="mySlides">
-            <img src="images/offer1.webp">
-        </div>
+        <ul class="row path">
+            <li><a href="">الرئيسية</a></li>
+            <li><a href="">الكتب العربية</a></li>
+            <li><a href="">كتب الكترونية</a></li>
+            <li><a href="">لأنك الله (كتاب الكتروني)</a></li>
+        </ul>
+    </div>
 
-        <div class="mySlides">
-            <img src="images/offer2.webp">
+    <div class="container row center book-info">
+        <div class="book-logo" id="open-books">
+            <img src="images/books.jpg" alt="" class="large-book">
+            <img src="images/books.jpg" alt="" class="thumb">
         </div>
+        <div>
+            <h2>لأنك الله (كتاب إلكتروني)</h2>
+            <p class="more"><a href="">عرض المزيد ↓</a></p>
+            <p class="book-price"><b>12.99</b>ر.س</p>
+            <span class="black-gray">شامل الضريبة</span>
+            <div class="left">
+                <p>Each: وحدة البيع</p>
+                <div class="row">
+                    <a href="">(16 المراجعات)</a>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p>رقم الصنف JBB410156
+                    رقم المنتج 4</p>
+            </div>
+            <span>الصيغ المتوفرة:</span>
+            <form action="">
+                <div class="format row space-between">
+                    <div class="row base">
+                        <input type="radio" name="blue" id="blue" checked>
+                        <p>كتاب الكتروني </p>
+                        <i class="fa fa-question"></i>
+                    </div>
+                    <div class="red-price">
+                        <p><b>12.99 </b> ر.س</p>
+                        <span class="black-gray">شامل الضريبة</span>
+                    </div>
+                </div>
 
-        <div class="mySlides">
-            <img src="images/offer3.jpg">
+                <div class="format row space-between">
+                    <div class="row base">
+                        <input type="radio" name="blue" id="blue">
+                        <p>كتاب الكتروني </p>
+                    </div>
+                    <div class="red-price">
+                        <p><b>12.99 </b> ر.س</p>
+                        <span class="black-gray">شامل الضريبة</span>
+                    </div>
+                </div>
+            </form>
+
         </div>
-
-        <div class="mySlides">
-            <img src="images/offer4.jpg">
+        <div>
+            <div class="add-cart">
+                <div class="note">
+                    <b>ملاحظة: </b><span>سيتم إضافة هذا الكتاب الإلكتروني إلى مكتبتك في قارئ جرير.</span>
+                    <p><a href="">اقرأ المزيد</a></p>
+                </div>
+                <div class="row space-between">
+                    <form action="">
+                        <select name="" id="">
+                            <option value="">1</option>
+                        </select>
+                    </form>
+                    <button class="row cart-btn"><i class="fa fa-shopping-cart" aria-hidden="true">اضف الى السلة</i></button>
+                </div>
+            </div>
         </div>
+    </div>
 
-        <div class="mySlides">
-            <img src="images/offer5.jpg">
-        </div>
-
-        <div class="mySlides">
-            <img src="images/offer6.jpg">
-        </div>
-
-        <a class="prev" onclick="changeImg(-1)">❮</a>
-        <a class="next" onclick="changeImg(1)">❯</a>
+    <div id="book-slider">
+        <button class="close" id="close-books">X</button>
+        <div class="container center">
+            <div class="mySlides">
+              <div class="numbertext">1 / 6</div>
+              <img src="images/book1.jpg" style="width:100%">
+            </div>
+          
+            <div class="mySlides">
+              <div class="numbertext">2 / 6</div>
+              <img src="images/book2.jpg" style="width:100%">
+            </div>
+          
+            <div class="mySlides">
+              <div class="numbertext">3 / 6</div>
+              <img src="images/book3.jpg" style="width:100%">
+            </div>
+              
+            <div class="mySlides">
+              <div class="numbertext">4 / 6</div>
+              <img src="images/book4.jpg" style="width:100%">
+            </div>
+          
+            <div class="mySlides">
+              <div class="numbertext">5 / 6</div>
+              <img src="images/book5.jpg" style="width:100%">
+            </div>
+              
+            <div class="mySlides">
+              <div class="numbertext">6 / 6</div>
+              <img src="images/book6.jpg" style="width:100%">
+            </div>
+              
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+          
+            <div class="caption-container">
+              <p id="caption"></p>
+            </div>
+          
+            <div class="row">
+              <div class="column">
+                <img class="demo cursor" src="images/book1.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="images/book2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="images/book3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="images/book4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="images/book5.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+              </div>    
+              <div class="column">
+                <img class="demo cursor" src="images/book6.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+              </div>
+            </div>
+          </div>
     </div>
 
     <div class="break"></div>
@@ -235,6 +346,7 @@
     </footer>
     <script src="js/app.js"></script>
     <script src="js/timer.js"></script>
+    <script src="js/slider.js"></script>
 </body>
 
 </html>

@@ -25,8 +25,12 @@ function changeImg(n) {
 
 function showSlides(n) {
   var slides = document.querySelectorAll(".mySlides");
-  if (n > slides.length) { slideIndex = 1 }
-  if (n < 1) { slideIndex = slides.length }
+  if (n > slides.length) {
+    slideIndex = 1
+  }
+  if (n < 1) {
+    slideIndex = slides.length
+  }
   slides.forEach(element => {
     element.style.display = "none";
   });

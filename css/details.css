@@ -15,3 +15,188 @@
     font-size: 30px;
     background-color: #eee;
 }
+
+.path li a {
+    color: #00d;
+}
+
+.path li::after {
+    content: "/";
+    margin: 0px 10px;
+}
+
+.left {
+    direction: ltr;
+}
+
+.left i {
+    color: #FFC82C;
+}
+
+.book-logo {
+    box-shadow: 0px 0px 5px #aaa;
+    padding: 15px 0px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    cursor: zoom-in;
+}
+
+.large-book {
+    width: 90%;
+}
+
+.thumb {
+    width: 60px;
+    margin-top: 30px;
+    border: 2px solid #00e;
+    border-radius: 5px;
+    padding: 5px 0px;
+}
+
+.note {
+    background-color: #FFF9EB;
+    margin: 20px 0px;
+    padding: 10px 15px 10px 50px;
+    border-right: 5px solid #FFD401;
+}
+
+.note a {
+    color: #4456cc;
+}
+
+.note span {
+    color: gray;
+}
+
+.book-info {
+    margin-top: 50px;
+    justify-content: space-between;
+}
+
+.book-info h2 {
+    font-size: 30px;
+}
+
+.book-info > div {
+    width: 30%;
+}
+
+.base {
+    align-items: center;
+}
+
+.more a{
+    font-size: 22px;
+    color: #00d;
+    font-weight: 500;
+}
+
+.book-price {
+    color: #e00;
+    font-size: 24px;
+}
+
+.book-price b {
+    font-size: 32px;
+    font-weight: 900;
+}
+
+.black-gray {
+    color: #aaa;
+    font-size: 14px;
+}
+
+.left p {
+    color: #999;
+    font-size: 18px;
+}
+
+.left > div {
+    margin: 10px 0px;
+}
+
+.left a {
+    color: #00d;
+    margin-right: 5px;
+}
+
+.left i {
+    margin: 0px 2px;
+    font-size: 14px;
+}
+
+.format {
+    margin: 10px 0px;
+}
+
+.format input {
+    height: 30px;
+    width: 30px;
+    margin-left: 10px;
+}
+
+.format i {
+    background-color: #eee;
+    color: #aaa;
+    font-size: 5px;
+    border-radius: 50%;
+    padding: 8px;
+    margin-right: 10px;
+}
+
+.red-price > p {
+    color: #e00;
+}
+
+.red-price b {
+    font-size: 24px;
+}
+
+.add-cart {
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #aaa;
+    padding: 15px;
+    
+}
+
+.add-cart select {
+    border: none;
+    border-radius: 5px;
+    background-color: #eee;
+    font-size: 18px;
+}
+
+.cart-btn{
+    flex-grow: 1;
+    margin: 0px 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #c44;
+    color: #fff;
+    font-size: 20px;
+}
+
+.cart-btn i {
+    margin: auto auto;
+}
+
+
+/* Slider styles */
+#book-slider {
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    overflow-y: scroll;
+    background-color: rgba(10, 10, 10, 0.8);
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    display: none;
+}
+
+.mySlides img {
+    max-width: 400px;
+}
