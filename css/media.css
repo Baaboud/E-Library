@@ -1,6 +1,6 @@
 @media screen and (max-width: 1080px) {
     .search-tags {
-        display: none;
+        display: none !important;
     }
 
     .top-bar i {
@@ -53,6 +53,16 @@
 
     .shopping-cart {
         padding: 20px;
+    }
+
+    /* Details Page */
+    .book-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .book-info > div {
+        width: 70% !important;
     }
 }
 
@@ -162,5 +172,11 @@
     #news input {
         font-size: 20px !important;
         width: 150px !important;
+    }
+
+    /* Details Page */
+
+    .book-info > div {
+        width: 90% !important;
     }
 }
