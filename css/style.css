@@ -141,11 +141,24 @@ header {
     top: 0;
 }
 
-.header-main>i {
+.rounded-logo {
+    position: relative;
     padding: 15px;
     font-size: 20px;
     border-radius: 50%;
     background-color: #EFF2F7;
+}
+
+.rounded-logo span {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #c40;
+    color: #fff;
 }
 
 .header-nav ul {
@@ -191,6 +204,15 @@ h2 {
     width: 100%;
     text-align: center;
     margin-bottom: 30px;
+}
+
+.path li a {
+    color: #00d;
+}
+
+.path li::after {
+    content: "/";
+    margin: 0px 10px;
 }
 
 .offer {

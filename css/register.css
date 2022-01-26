@@ -17,6 +17,10 @@
     justify-content: space-around;
 }
 
+.register h2 {
+    cursor: pointer;
+}
+
 .close {
     position: absolute;
     top: 10px;
@@ -36,7 +40,7 @@ hr {
 
 .hr {
     height: 5px;
-    background-color: #333;
+    background-color: #D4050B;
 }
 
 .register > div {
@@ -46,11 +50,19 @@ hr {
     align-items: center;
 }
 
-.register form {
+#log-in , #sign-up {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 20px;
+}
+
+#log-in > p , #sign-up > p {
+    margin-top: 40px;
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: gray;
 }
 
 .register form > * {
@@ -58,7 +70,7 @@ hr {
 }
 
 input{
-    width: 90%;
+    width: 100%;
     font-size: 24px;
     height: 40px;
     background-color: #EFF2F7;
@@ -72,8 +84,9 @@ input[type = "tel"] {
 }
 
 input[type = "checkbox"] {
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
+    margin-left: 8px;
 }
 
 .mobile {
@@ -82,7 +95,7 @@ input[type = "checkbox"] {
 }
 
 .wide-btn {
-    width: 90%;
+    width: 100%;
     font-size: 20px;
     padding: 10px 0;
     border-radius: 8px;
@@ -92,9 +105,10 @@ input[type = "checkbox"] {
 .new-btn {
     font-size: 24px;
     background-color: white;
-    border-radius: 8px;
-    padding: 10px 40px;
-    border-color: #777;
+    border-radius: 4px;
+    padding: 15px 50px;
+    border: none;
+    box-shadow: 0px 0px 12px gray;
 }
 
 .now-btn {
@@ -107,4 +121,9 @@ select {
     border-radius: 8px;
     margin-right: 10px;
     outline: none;
+}
+
+.check-text {
+    font-size: 20px;
+    color: gray;
 }

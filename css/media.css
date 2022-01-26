@@ -43,7 +43,7 @@
         display: none;
     }
 
-    .footer-lists > div {
+    .footer-lists>div {
         width: 50%;
     }
 
@@ -61,7 +61,7 @@
         align-items: center;
     }
 
-    .book-info > div {
+    .book-info>div {
         width: 70% !important;
     }
 }
@@ -72,7 +72,7 @@
         overflow-y: scroll;
     }
 
-    .register > div {
+    .register>div {
         width: 100% !important;
     }
 
@@ -113,13 +113,14 @@
         display: none;
     }
 
-    .footer-lists > div {
+    .footer-lists>div {
         width: 100%;
     }
 
     .contact {
         width: 100%;
-        display: flex;;
+        display: flex;
+        ;
         justify-content: space-between;
     }
 
@@ -145,12 +146,12 @@
 
     .cart-body {
         width: 100% !important;
-        padding: 20px ;
+        padding: 20px;
     }
-    
+
     .cart-price {
         width: 100% !important;
-        padding: 20px ;
+        padding: 20px;
     }
 
     .product .row {
@@ -162,6 +163,23 @@
         width: 200px !important;
         margin-bottom: 20px !important;
     }
+
+    /* Category page */
+
+    .category-header , .category-body {
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .filter {
+        width: 50% !important;
+    }
+
+    .category-header {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
 }
 
 @media screen and (max-width: 400px) {
@@ -172,11 +190,21 @@
     #news input {
         font-size: 20px !important;
         width: 150px !important;
+        margin-left: 15px;
     }
 
     /* Details Page */
 
     .book-info > div {
+        width: 90% !important;
+    }
+
+    /* Checkout Page */
+    .shopping-cart {
+        padding: 0px;
+    }
+
+    .filter {
         width: 90% !important;
     }
 }

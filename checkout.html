@@ -20,49 +20,50 @@
         <div class="register">
             <button id="close-btn" class="close">X</button>
             <div>
-                <h2>تسجيل الدخول</h2>
-                <hr class="hr">
-                <div class="log-in">
-
+                <h2 id="log-btn">تسجيل الدخول</h2>
+                <hr id="active-log">
+                <div id="log-in">
+                    <form action="">
+                        <input type="text" name="" id="" placeholder="البريد الالكتروني او رقم الجوال">
+                        <input type="password" name="" id="" placeholder="كلمة السر">
+                        <button class="wide-btn now-btn">تسجيل الدخول</button>
+                    </form>
+                    <p>ليس لديك حساب؟</p>
+                    <button class="new-btn">انشاء حساب جديد</button>
                 </div>
-                <form action="">
-                    <input type="text" name="" id="" placeholder="البريد الالكتروني او رقم الجوال">
-                    <input type="password" name="" id="" placeholder="كلمة السر">
-                    <button class="wide-btn now-btn">تسجيل الدخول</button>
-                </form>
-                <p>ليس لديك حساب؟</p>
-                <button class="new-btn">انشاء حساب جديد</button>
             </div>
-            <div class="sign-up">
-                <h2>انشاء حساب</h2>
-                <hr>
-                <form action="">
-                    <div class="moble row content-center">
-                        <input type="tel" name="" id="" placeholder="رقم الجوال">
-                        <select name="" id="">
-                            <option value="">Yemen</option>
-                            <option value="">Oman</option>
-                        </select>
-                    </div>
-                    <p>سوف ترسل لك <b>رمز التحقق عن طريق رسالة نصية</b></p>
-                    <button class="wide-btn">ارسال رمز التحقق</button>
-                    <input type="text" name="" id="" placeholder="الاسم الاول">
-                    <input type="text" name="" id="" placeholder="اسم العائلة">
-                    <input type="email" name="" id="" placeholder="البريد الالكتروني">
-                    <input type="email" name="" id="" placeholder="تأكيد البريد الالكتروني">
-                    <input type="password" name="" id="" placeholder="كلمة السر">
-                    <div class="agree row">
-                        <input type="checkbox" name="" id="">
-                        <p>اوافق على الشروط والاحكام</p>
-                    </div>
-                    <div class="post row">
-                        <input type="checkbox" name="" id="">
-                        <p>التسجيل للانضمام للنشرة البريدية</p>
-                    </div>
-                    <button class="wide-btn">انشاء الحساب</button>
-                </form>
+            <div>
+                <h2 id="sign-btn">انشاء حساب</h2>
+                <hr id="active-sign">
+                <div id="sign-up">
+                    <form action="">
+                        <div class="moble row content-center">
+                            <input type="tel" name="" id="" placeholder="رقم الجوال">
+                            <select name="" id="">
+                                <option value="">Yemen</option>
+                                <option value="">Oman</option>
+                            </select>
+                        </div>
+                        <p>سوف ترسل لك <b>رمز التحقق عن طريق رسالة نصية</b></p>
+                        <button class="wide-btn">ارسال رمز التحقق</button>
+                        <input type="text" name="" id="" placeholder="الاسم الاول">
+                        <input type="text" name="" id="" placeholder="اسم العائلة">
+                        <input type="email" name="" id="" placeholder="البريد الالكتروني">
+                        <input type="email" name="" id="" placeholder="تأكيد البريد الالكتروني">
+                        <input type="password" name="" id="" placeholder="كلمة السر">
+                        <div class="agree row">
+                            <input type="checkbox" name="" id="">
+                            <p>اوافق على الشروط والاحكام</p>
+                        </div>
+                        <div class="post row">
+                            <input type="checkbox" name="" id="">
+                            <p>التسجيل للانضمام للنشرة البريدية</p>
+                        </div>
+                        <button class="wide-btn">انشاء الحساب</button>
+                    </form>
 
-                <p>لديك حساب؟ <a href="">تسجيل الدخول ></a></p>
+                    <p>لديك حساب؟ <a href="">تسجيل الدخول ></a></p>
+                </div>
             </div>
         </div>
     </div>
@@ -81,8 +82,8 @@
         </div>
         <div class="container center">
             <div class="header-main row items-center">
-                <i class="fa fa-list list" aria-hidden="true"></i>
-                <a href=""><img src="images/library.png" alt="" id="logo"></a>
+                <i class="fa fa-list list rounded-logo"></i>
+                <a href="index.html"><img src="images/library.png" alt="" id="logo"></a>
                 <form action="" id="search-form">
                     <input type="search" name="" id="search" placeholder="البحث">
                     <i class="fa fa-search"></i>
@@ -96,14 +97,18 @@
                         <li>تلفزيون</li>
                     </ul>
                 </form>
-                <i class="fas fa-shopping-cart"></i>
+                <a href="checkout.html" class="rounded-logo"><i class="fas fa-shopping-cart"></i></a>
             </div>
         </div>
     </header>
-    <div class="container center row  items-center">
-        <h1> <i class="fa fa-shopping-cart"> السلة </i></h1>
-        <span> (3 منتجات) </span>
+
+    <div class="container items-center">
+        <div class="row items-center">
+            <h1> <i class="fa fa-shopping-cart"> السلة </i></h1>
+            <span> (3 منتجات) </span>
+        </div>
     </div>
+
     <div class="container center row space-between shopping-cart">
         <div class="cart-body">
             <div class="products">
@@ -214,7 +219,7 @@
                         <span><b class="red-text">68.97</b> ر.س </span>
                     </div>
                 </div>
-    
+
                 <div class="bottom-cart">
                     <p>بالضغط على "انهاء التسوق" فأنت توافق على الشروط والاحكام و سياسة الخصوصية</p>
                     <button id="cart-btn">انهاء التسوق</button>
@@ -235,7 +240,7 @@
                 <div id="line"></div>
             </div>
         </div>
-    
+
         <div class="container mt steps-container">
             <form action="" id="step1" class="steps row">
                 <input type="text" placeholder="اسم المستخدم">
@@ -243,7 +248,7 @@
                 <input type="tel" placeholder="رقم الهاتف">
                 <input type="text" placeholder="العنوان">
             </form>
-    
+
             <form action="" id="step2" class="steps row mt">
                 <div class="row gap">
                     <input type="text" placeholder="نوع بطاقة الدفع">
@@ -260,7 +265,7 @@
                     <input type="date" name="" id="">
                 </div>
             </form>
-    
+
             <div id="step3" class="steps confirm center mt">
                 <div class="top-cart">
                     <div class="row space-around">
@@ -276,13 +281,13 @@
                         <span><b class="red-text">68.97</b> ر.س </span>
                     </div>
                 </div>
-    
+
                 <div class="bottom-cart">
                     <p>بالضغط على "تاكيد الشراء" فسيتم اتمام عملية الشراء وفقا لبيانات المستخدم وبيانات الدفع</p>
                     <button id="cart-btn">تاكيد الشراء</button>
                 </div>
             </div>
-    
+
             <div id="step4" class="steps">
                 <h3>Done</h3>
             </div>

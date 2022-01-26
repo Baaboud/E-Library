@@ -16,15 +16,6 @@
     background-color: #eee;
 }
 
-.path li a {
-    color: #00d;
-}
-
-.path li::after {
-    content: "/";
-    margin: 0px 10px;
-}
-
 .left {
     direction: ltr;
 }

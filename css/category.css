@@ -1,0 +1,89 @@
+.category-header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.category-header button {
+    background-color: #fff;
+    color: green;
+    border: 2px solid green;
+    padding: 15px 20px 15px 80px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    margin: 0px 10px;
+}
+
+.category-header i {
+    margin-left: 10px;
+}
+
+.category-header select {
+    width: 200px;
+    font-size: 20px;
+}
+
+.category-body {
+    margin-top: 20px;
+    width: 100%;
+    gap: 5px;
+}
+
+.filter {
+    width: 25%;
+    margin-right: 10px;
+}
+
+.books {
+    width: 75%;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.filter-content > * {
+    padding: 10px 20px;
+    color: #555;
+    font-weight: bold;
+    border: 1px solid #eee;
+}
+
+.filter-content > div {
+    background-color: #EDF6FF;
+}
+
+.filter-content > h3 {
+    background-color: green;
+    color: #fff;
+}
+
+.range {
+    background-color: #fff !important;
+    padding: 20px;
+}
+
+.squar {
+    width: 15px;
+    height: 15px;
+    background-color: #a00;
+}
+
+.rectangular {
+    flex-grow: 1;
+    height: 10px;
+    background-color: gray;
+}
+
+.more {
+    width: 100%;
+    height: 40px;
+    background-color: #2675C2;
+    color: #fff;
+    padding: 5px;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+}

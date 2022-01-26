@@ -1,5 +1,5 @@
 const timer = ()=>{
-    const upperDate = new Date('Jan 25, 2022 00:00:00').getTime();
+    const upperDate = new Date('Jan 29, 2022 00:00:00').getTime();
     const currentDate = new Date().getTime();
     const diffDate = upperDate-currentDate;
 

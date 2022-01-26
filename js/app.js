@@ -1,5 +1,4 @@
 // Register Pop-up
-var temp = 0;
 const showBTN = document.getElementById("pop-btn");
 const hideBTN = document.getElementById("close-btn");
 const modal_container = document.getElementById("pop");
@@ -14,6 +13,33 @@ hideBTN.addEventListener("click", (e) => {
   modal_container.style.display = 'none';
 });
 
+
+// Active register
+const logBTN = document.getElementById("log-btn");
+const signBTN = document.getElementById("sign-btn");
+const logCon = document.getElementById("log-in");
+const signCon = document.getElementById("sign-up");
+const activeLog = document.getElementById("active-log");
+const activeSign = document.getElementById("active-sign");
+signCon.style.display = 'none';
+
+activeLog.classList.add("hr");
+
+logBTN.addEventListener("click", (e) => {
+  e.preventDefault();
+  logCon.style.display = 'inline-flex';
+  signCon.style.display = 'none';
+  activeLog.classList.add("hr");
+  activeSign.classList.remove("hr");
+});
+
+signBTN.addEventListener("click", (e) => {
+  e.preventDefault();
+  logCon.style.display = 'none';
+  signCon.style.display = 'inline-flex';
+  activeLog.classList.remove("hr");
+  activeSign.classList.add("hr");
+});
 
 // Slider
 var slideIndex = 1;
@@ -36,3 +62,31 @@ function showSlides(n) {
   });
   slides[slideIndex - 1].style.display = "block";
 }
+
+//Search
+const search = document.getElementById("search");
+const books_con = document.querySelectorAll(".book");
+
+search.addEventListener('keyup', function (e) {
+  books_con.forEach(element => {
+    if (element.textContent.includes(search.value)) {
+      element.style.display = "inline-flex";
+    }
+    else {
+      element.style.display = "none";
+    }
+  });
+});
+
+// Basket Counter
+const cart_btn = document.querySelectorAll(".book .icons .round");
+const basket_counter = document.getElementById("cart-counter");
+
+var counter = 0;
+cart_btn.forEach(element => {
+  element.addEventListener('click', (e) => {
+    e.preventDefault();
+    counter++;
+    basket_counter.innerText = counter;
+  });
+});
