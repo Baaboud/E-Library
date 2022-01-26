@@ -1,0 +1,19 @@
+body {
+    direction: rtl;
+}
+
+.contact {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 20%;
+    padding: 20px;
+}
+
+#search-form i {
+    position: absolute;
+    font-size: 25px;
+    left: 10px;
+    top: 5px;
+    color: gray;
+}

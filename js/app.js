@@ -90,3 +90,16 @@ cart_btn.forEach(element => {
     basket_counter.innerText = counter;
   });
 });
+
+// Multi Language
+
+function lange() {
+  const lang = document.getElementsByTagName('link')[0];
+  if(lang.getAttribute('href')=='css/ar.css')
+  {
+    lang.setAttribute('href','css/en.css');
+  }
+  else {
+    lang.setAttribute('href','css/ar.css');
+  }
+}

@@ -5,7 +5,6 @@
 }
 
 body {
-    direction: rtl;
     overflow-x: hidden;
 }
 
@@ -97,15 +96,6 @@ header {
 
 #search-form {
     position: relative;
-}
-
-#search-form i {
-    position: absolute;
-    font-size: 25px;
-
-    left: 10px;
-    top: 5px;
-    color: gray;
 }
 
 #search {
@@ -295,14 +285,6 @@ h2 {
     font-size: 22px;
 }
 
-.contact {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 20%;
-    padding: 20px;
-}
-
 .contact h3 {
     width: 100%;
     color: #A6A6A6;
@@ -348,6 +330,10 @@ h2 {
     position: relative;
     width: 90%;
     margin: 0 auto;
+}
+
+.categories::-webkit-scrollbar {
+    display: none;
 }
 
 .categories a {
@@ -400,6 +386,10 @@ h2 {
     width: 90%;
     margin: 0 auto;
     justify-content: unset !important;
+}
+
+.slider::-webkit-scrollbar {
+    display: none;
 }
 
 .book {
