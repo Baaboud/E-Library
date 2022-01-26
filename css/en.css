@@ -19,3 +19,8 @@ body {
     top: 5px;
     color: gray;
 }
+
+#news h3 {
+    
+    text-align: left !important;
+}
