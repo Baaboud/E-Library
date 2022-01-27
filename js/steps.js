@@ -29,7 +29,11 @@ const progress = document.getElementById("progress");
 const steps = document.querySelectorAll(".circle");
 const line = document.getElementById("line");
 let index = 1;
+if (index == 1) {
+    prev.style.visibility = "hidden";
+}
 next.addEventListener("click", function () {
+
     index++;
     if (index >= steps.length) {
         index = steps.length;
@@ -65,4 +69,18 @@ function chstats() {
         }
     }
     )
+
+    
+
+    if (index <= 1) {
+        prev.style.visibility = "hidden";
+    }
+    else if(index >= steps.length)
+    {
+        next.style.visibility = "hidden";
+    }
+    else {
+        prev.style.visibility = "visible";
+        next.style.visibility = "visible";
+    }
 }

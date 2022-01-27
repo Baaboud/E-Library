@@ -22,7 +22,7 @@
         <div class="register">
             <button id="close-btn" class="close">X</button>
             <div>
-                <h2 id="log-btn">تسجيل الدخول</h2>
+                <h2 class="log-btn">تسجيل الدخول</h2>
                 <hr id="active-log">
                 <div id="log-in">
                     <form action="">
@@ -31,11 +31,11 @@
                         <button class="wide-btn now-btn">تسجيل الدخول</button>
                     </form>
                     <p>ليس لديك حساب؟</p>
-                    <button class="new-btn">انشاء حساب جديد</button>
+                    <button class="new-btn sign-btn">انشاء حساب جديد</button>
                 </div>
             </div>
             <div>
-                <h2 id="sign-btn">انشاء حساب</h2>
+                <h2 class="sign-btn">انشاء حساب</h2>
                 <hr id="active-sign">
                 <div id="sign-up">
                     <form action="">
@@ -55,16 +55,16 @@
                         <input type="password" name="" id="" placeholder="كلمة السر">
                         <div class="agree row">
                             <input type="checkbox" name="" id="">
-                            <p>اوافق على الشروط والاحكام</p>
+                            <p class="check-text">اوافق على الشروط والاحكام</p>
                         </div>
                         <div class="post row">
                             <input type="checkbox" name="" id="">
-                            <p>التسجيل للانضمام للنشرة البريدية</p>
+                            <p class="check-text">التسجيل للانضمام للنشرة البريدية</p>
                         </div>
                         <button class="wide-btn">انشاء الحساب</button>
                     </form>
 
-                    <p>لديك حساب؟ <a href="">تسجيل الدخول ></a></p>
+                    <p class="">لديك حساب؟ <b>تسجيل الدخول ></b></p>
                 </div>
             </div>
         </div>
@@ -72,19 +72,21 @@
     <header>
         <div class="top-bar">
             <ul class="row content-center">
+                <button id="close-list">X</button>
                 <li><a href="" id="pop-btn"><i class="fas fa-user"></i> ادخل لحسابك أو سجل الآن</a></li>
                 <li><a href=""><i class="fas fa-star"></i> المفضلة</a></li>
                 <li><a href=""><i class="fas fa-truck"></i> تتبع الشحنة</a></li>
                 <li><a href=""><i class="fas fa-shield-check"></i> طلبات الصيانة</a></li>
                 <li><a href=""><i class="fas fa-info-circle"></i> المساعدة</a></li>
                 <li><a href=""><i class="fas fa-info-circle"></i> فروعنا</a></li>
-                <li><a href="">المملكة العربية السعودية | ر.س.</a></li>
+                <li><a href=""><i><img src="images/yem.png" style="height: 20px;"></i>المملكة العربية السعودية |
+                        ر.س.</a></li>
                 <li><a href="#" onclick="lange()">English <i class="fas fa-language"></i></a></li>
             </ul>
         </div>
-        <div class="container center">
+        <div class="container center stick-search">
             <div class="header-main row items-center">
-                <i class="fa fa-list list rounded-logo"></i>
+                <i class="fa fa-list list rounded-logo" id="open-list"></i>
                 <a href="index.html"><img src="images/library.png" alt="" id="logo"></a>
                 <form action="#" id="search-form">
                     <input type="search" name="" id="search" placeholder="البحث">
@@ -486,10 +488,12 @@
                 <div class="contact">
                     <h3>تواصل معنا</h3>
                     <ul class="row">
-                        <li><a href=""><i class="fas fa-user"></i></a></li>
-                        <li><a href=""><i class="fas fa-user"></i></a></li>
-                        <li><a href=""><i class="fas fa-user"></i></a></li>
-                        <li><a href=""><i class="fas fa-user"></i></a></li>
+                        <li><a href=""><i class="fab fa-facebook"></i></a></li>
+                        <li><a href=""><i class="fab fa-youtube"></i></a></li>
+                        <li><a href=""><i class="fab fa-snapchat"></i></a></li>
+                        <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                        <li><a href=""><i class="fab fa-instagram"></i></a></li>
                     </ul>
                 </div>
             </div>

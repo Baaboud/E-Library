@@ -1,6 +1,6 @@
 :root {
     --circle-defalut: #ccc;
-    --circle-active: #080;
+    --circle-active: #CF070E;
     direction: rtl;
 }
 
@@ -52,7 +52,7 @@
 #line {
     z-index: -1;
     content: '';
-    background-color: purple;
+    background-color: #CF070E;
     height: 5px;
     width: 0%;
     position: absolute;
@@ -62,10 +62,11 @@
 
 .circle {
     z-index: 1;
-    border: 3px solid green;
+    border: 3px solid #CF070E;
     border-radius: 100%;
     background-color: #eee;
-    color: #333;
+    color: #CF070E;
+    font-weight: bold;
     width: 40px;
     height: 40px;
     display: flex;
@@ -75,7 +76,7 @@
 
 .btn {
     padding: 14px 20px;
-    background-color: #33a;
+    background-color: #CF070E;
     width: 80px;
     text-transform: capitalize;
     font-size: 18px;

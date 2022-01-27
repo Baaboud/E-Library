@@ -47,6 +47,24 @@ signBTN.forEach(element => {
   });
 });
 
+
+// Header list
+const open_list = document.getElementById("open-list");
+const close_list = document.getElementById("close-list");
+const list_con = document.querySelector(".top-bar")
+
+open_list.addEventListener("click", (e) => {
+  e.preventDefault();
+  list_con.style.display = 'block';
+  close_list.style.display = 'block';
+});
+
+close_list.addEventListener("click", (e) => {
+  e.preventDefault();
+  list_con.style.display = 'none';
+  close_list.style.display = 'block';
+});
+
 // Slider
 const offer_dot = document.querySelectorAll(".offer-dots span");
 var slideIndex = 1;
