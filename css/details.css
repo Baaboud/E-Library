@@ -305,6 +305,10 @@
     margin-bottom: 8px;
 }
 
+.demo {
+    width: 100%;
+}
+
 /* Slider styles */
 #book-slider {
     position: fixed;

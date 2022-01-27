@@ -15,8 +15,8 @@ hideBTN.addEventListener("click", (e) => {
 
 
 // Active register
-const logBTN = document.getElementById("log-btn");
-const signBTN = document.getElementById("sign-btn");
+const logBTN = document.querySelectorAll(".log-btn");
+const signBTN = document.querySelectorAll(".sign-btn");
 const logCon = document.getElementById("log-in");
 const signCon = document.getElementById("sign-up");
 const activeLog = document.getElementById("active-log");
@@ -25,23 +25,30 @@ signCon.style.display = 'none';
 
 activeLog.classList.add("hr");
 
-logBTN.addEventListener("click", (e) => {
-  e.preventDefault();
-  logCon.style.display = 'inline-flex';
-  signCon.style.display = 'none';
-  activeLog.classList.add("hr");
-  activeSign.classList.remove("hr");
+
+logBTN.forEach(element => {
+  element.addEventListener("click", (e) => {
+    e.preventDefault();
+    logCon.style.display = 'inline-flex';
+    signCon.style.display = 'none';
+    activeLog.classList.add("hr");
+    activeSign.classList.remove("hr");
+  });
 });
 
-signBTN.addEventListener("click", (e) => {
-  e.preventDefault();
-  logCon.style.display = 'none';
-  signCon.style.display = 'inline-flex';
-  activeLog.classList.remove("hr");
-  activeSign.classList.add("hr");
+
+signBTN.forEach(element => {
+  element.addEventListener("click", (e) => {
+    e.preventDefault();
+    logCon.style.display = 'none';
+    signCon.style.display = 'inline-flex';
+    activeLog.classList.remove("hr");
+    activeSign.classList.add("hr");
+  });
 });
 
 // Slider
+const offer_dot = document.querySelectorAll(".offer-dots span");
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -60,8 +67,16 @@ function showSlides(n) {
   slides.forEach(element => {
     element.style.display = "none";
   });
+
+  offer_dot.forEach(element => {
+    element.classList.remove("active-dot");
+  });
+
   slides[slideIndex - 1].style.display = "block";
+  offer_dot[slideIndex - 1].classList.add("active-dot");
 }
+
+// Slider Dots
 
 //Search
 const search = document.getElementById("search");
@@ -104,7 +119,7 @@ function lange() {
 }
 
 
-//Books Slider
+//Books Scroll Slider
 const booksize = document.querySelector('.slider .book').clientWidth;
 const buttonRight = document.querySelectorAll('.slideRight');
 const buttonLeft = document.querySelectorAll('.slideLeft');
