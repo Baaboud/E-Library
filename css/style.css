@@ -386,6 +386,7 @@ h2 {
     width: 90%;
     margin: 0 auto;
     justify-content: unset !important;
+    scroll-behavior: smooth;
 }
 
 .slider::-webkit-scrollbar {

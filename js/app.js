@@ -95,11 +95,30 @@ cart_btn.forEach(element => {
 
 function lange() {
   const lang = document.getElementsByTagName('link')[0];
-  if(lang.getAttribute('href')=='css/ar.css')
-  {
-    lang.setAttribute('href','css/en.css');
+  if (lang.getAttribute('href') == 'css/ar.css') {
+    lang.setAttribute('href', 'css/en.css');
   }
   else {
-    lang.setAttribute('href','css/ar.css');
+    lang.setAttribute('href', 'css/ar.css');
   }
 }
+
+
+//Books Slider
+const booksize = document.querySelector('.slider .book').clientWidth;
+const buttonRight = document.querySelectorAll('.slideRight');
+const buttonLeft = document.querySelectorAll('.slideLeft');
+
+buttonRight.forEach(element => {
+  element.addEventListener('click', (e) => {
+    e.preventDefault();
+    element.parentElement.querySelector('.slider').scrollLeft += (booksize+30);
+  });
+});
+
+buttonLeft.forEach(element => {
+  element.addEventListener('click', (e) => {
+    e.preventDefault();
+    element.parentElement.querySelector('.slider').scrollLeft -= (booksize+30);
+  });
+});
