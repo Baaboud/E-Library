@@ -142,3 +142,15 @@
     border-radius: 8px;
     border: none;
 }
+
+.steper-title {
+    text-align: center;
+    margin-top: 10px;
+    width: 100%;
+    background-color: #CF070E;
+    color: #eee;
+    font-size: 24px;
+    padding: 8px 0px;
+    border-radius: 8px;
+    border: none;
+}

@@ -64,6 +64,24 @@
     .book-info>div {
         width: 70% !important;
     }
+
+    .confirm {
+        width: 80% !important;
+    }
+
+    .progress {
+        margin-top: 50px;
+    }
+
+    .wrap {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px !important;
+    }
+
+    .wrap select {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 860px) {
@@ -183,7 +201,7 @@
 
     /* Category page */
 
-    .category-header , .category-body {
+    .category-header, .category-body {
         flex-wrap: wrap;
         gap: 20px;
         justify-content: center;
@@ -196,6 +214,14 @@
     .category-header {
         flex-direction: column-reverse;
         align-items: center;
+    }
+
+    .front .confirm {
+        width: 100% !important;
+    }
+
+    .steps input {
+        width: 90% !important;
     }
 }
 
@@ -212,7 +238,7 @@
 
     /* Details Page */
 
-    .book-info > div {
+    .book-info>div {
         width: 90% !important;
     }
 
